@@ -2,20 +2,19 @@ import com.google.gson.reflect.TypeToken
 import okhttp3.OkHttpClient
 import okhttp3.Request
 
-class ObtenerPersonajesRequest {
+class ObtenerPlanetsRequest {
 
     companion object {
-        fun get(): Array<Personaje> {
+        fun get(): PlanetResponse {
             val client = OkHttpClient()
             val request = Request.Builder()
-                .url("http://hp-api.herokuapp.com/api/characters")
+                .url("https://swapi.dev/api/planets/")
                 .build()
             val response = client.newCall(request).execute()
 
             if (response.isSuccessful) {
                 response.body?.string().let { responseBody ->
-                    val itemType = object : TypeToken<List<Personaje>>() {}.type
-                    return gson.fromJson<List<Personaje>?>(responseBody, itemType).toTypedArray()
+                    return gson.fromJson(responseBody, PlanetResponse::class.java)
                 }
 
             } else
