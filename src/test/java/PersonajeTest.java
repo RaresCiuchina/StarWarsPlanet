@@ -23,4 +23,35 @@ public class PersonajeTest {
         // tip: ej.personajes.obtenerPotters()
     }
 
+
+    @Test
+    public void test3(){
+        // TODO Crea una función que cuente a todos los personajes que forman parte del staff de Howarts y que están vivos
+        //
+    }
+
+    @Test
+    public void test4(){
+        // TODO Crea una función que cuente a todos los personajes que forman parte del staff de Howarts y que están muertos
+        //
+    }
+
+    @Test
+    public void test5(){
+        // TODO Crea una función que reciba una letra (char) y cuente todos personajes tienen esa letra en su nombre
+        //
+    }
+
+    @Test
+    public void test6(){
+        // TODO Crea una función que reciba un string y devuelva una lista con todos los personajes que tienen ese string
+        //  en su nombre y están vivos
+        //
+    }
+
+    @Test
+    public void test7(){
+        // TODO Crea una función que reciba un string y devuelva una lista con todos los personajes que su actor se llama
+        //  exactamente como el string recibido
+    }
 }
