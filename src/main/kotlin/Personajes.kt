@@ -15,4 +15,14 @@ class Personajes(private val personajes: Array<Personaje>) {
             it.image.isNotEmpty()
         }.toTypedArray()
     }
+
+    fun buscarPorNombre(nombre : String?) : Array<Personaje> {
+        if (nombre!!.contains("Voldemort"))
+        throw NoPuedesBuscarAlQueNoPuedesNombrar()
+        return personajes.filter {
+            it.name.contains(nombre)
+        }.toTypedArray()
+    }
 }
+
+class NoPuedesBuscarAlQueNoPuedesNombrar : Exception()

@@ -63,6 +63,11 @@ public class PersonajeTest {
         //  exactamente como el string recibido
 
         // TODO comprueba que tu función devuelve el número correcto de elementos
-
     }
+
+
+
+    // TODO Realiza todos los test que consideres para probar la función buscar por nombre. Esa función buscará a todos los
+    //  personajes cuyos nombres contengan el string introducido. Si buscas Voldermort tendras problemas.
+
 }
