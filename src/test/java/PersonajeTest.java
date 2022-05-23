@@ -25,10 +25,10 @@ public class PersonajeTest {
     // tip: Algunos terrenos disponibles: forests, mountains, hills, etc.
     // TODO Haz todos los test que sean necesarios.
     // tip: Si el planeta tiene una población indeterminada, no debe mostrarse
-    
 
-    // TODO Haz la función en la clase Ejercicio6: obtenerPlanetasResidentes(int residentes)
-    //  nos devuelve una lista de aquellos planetas que tienen más residentes  que se llamen como el string.
+
+    // TODO Haz la función en la clase Ejercicio6: obtenerPlanetasResidentes(int residentes, String nombre)
+    //  nos devuelve una lista de aquellos planetas que tienen más residentes que la variable "residentes" y que su nombre contenga el String "nombre"
     // tip: cada residente es represetnado por una url, solo tienes que contar. Ej si residents=[https://swapi.dev/api/people/3/, https://swapi.dev/api/people/21/] el resultado será 2
     // TODO Haz todos los test que sean necesarios.
     // tip: Si el planeta tiene una población indeterminada, no debe mostrarse
