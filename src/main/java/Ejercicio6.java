@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Ejercicio6 {
 
@@ -60,7 +61,7 @@ public class Ejercicio6 {
         int i = 0;
 
         for(Planet planeta : fuera){
-            if (planeta.getPopulation().equals("unknown")) {
+            if (planeta.getTerrain().equals("unknown") || planeta.getTerrain().equals(null)) {
                 break;
             }
             if (planeta.getTerrain().equals(terreno)){
@@ -68,7 +69,6 @@ public class Ejercicio6 {
                 i++;
             }
         }
-
         return getArraySinNulos(fuera,i);
     }
 

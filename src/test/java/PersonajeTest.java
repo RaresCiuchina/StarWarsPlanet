@@ -58,6 +58,15 @@ public class PersonajeTest {
     // TODO Haz todos los test que sean necesarios.
     // tip: Si el planeta tiene un terreno indeterminada, no debe mostrarse
 
+    @Test
+    public void PruebaObtenerPlanetasConTerrenoForests() {
+        Assertions.assertEquals(2, ej.obtenerPlanetasConTerreno("forests").length);
+    }
+    @Test
+    public void PruebaObtenerPlanetasConTerrenoARIDO() {
+        Assertions.assertEquals( 0,ej.obtenerPlanetasConTerreno("arid").length);
+    }
+
 
     // TODO Haz la función en la clase Ejercicio6: obtenerPlanetasResidentes(int residentes, String nombre)
     //  nos devuelve una lista de aquellos planetas que tienen más residentes que la variable "residentes" y que su nombre contenga el String "nombre"
