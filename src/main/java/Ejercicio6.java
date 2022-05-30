@@ -60,18 +60,39 @@ public class Ejercicio6 {
         Planet[] fuera = new Planet[planets.obtenerTodos().length];
         int i = 0;
 
-        for(Planet planeta : fuera){
+
+        for(Planet planeta : planets.obtenerTodos()){
             if (planeta.getTerrain().equals("unknown") || planeta.getTerrain().equals(null)) {
                 break;
             }
-            if (planeta.getTerrain().equals(terreno)){
+            if (planeta.getTerrain().contains(terreno)){
                 fuera[i]=planeta;
                 i++;
             }
         }
+
         return getArraySinNulos(fuera,i);
     }
 
+    public Planet[] obtenerPlanetasResidentes(int residentes, String nombre){
+        Planet[] fuera = new Planet[planets.obtenerTodos().length];
+        int i = 0;
+        for ()
 
+
+        for(Planet planeta : planets.obtenerTodos()){
+            if (planeta.getResidents().equals("unknown") || planeta.getTerrain().equals(null)) {
+                break;
+            }
+            if (planeta.equals(nombre) && planeta){
+                fuera[i]=planeta;
+                i++;
+            }
+            if(){
+
+            }
+
+        return getArraySinNulos(fuera,i);
+    }
 
 }

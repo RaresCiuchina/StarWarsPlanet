@@ -60,17 +60,41 @@ public class PersonajeTest {
 
     @Test
     public void PruebaObtenerPlanetasConTerrenoForests() {
-        Assertions.assertEquals(2, ej.obtenerPlanetasConTerreno("forests").length);
+        Assertions.assertEquals(3, ej.obtenerPlanetasConTerreno("forests").length);
     }
     @Test
-    public void PruebaObtenerPlanetasConTerrenoARIDO() {
-        Assertions.assertEquals( 0,ej.obtenerPlanetasConTerreno("arid").length);
+    public void PruebaObtenerPlanetasConTerrenoArid() {
+        Assertions.assertEquals(0, ej.obtenerPlanetasConTerreno("arids").length);
+    }
+    @Test
+    public void PruebaObtenerPlanetasConTerrenoMountains() {
+        Assertions.assertEquals(4, ej.obtenerPlanetasConTerreno("mountains").length);
+    }
+    @Test
+    public void PruebaObtenerPlanetasConTerrenohills() {
+        Assertions.assertEquals(1, ej.obtenerPlanetasConTerreno("hills").length);
+    }
+    @Test
+    public void PruebaObtenerPlanetasConTerrenoPlain() {
+        Assertions.assertEquals(0, ej.obtenerPlanetasConTerreno("plain").length);
+    }
+    @Test
+    public void PruebaObtenerPlanetasConTerrenoDesert() {
+        Assertions.assertEquals(1, ej.obtenerPlanetasConTerreno("desert").length);
+    }
+
+    @Test
+    public void PruebaObtenerPlanetasConTerrenoRainforests() {
+        Assertions.assertEquals(1, ej.obtenerPlanetasConTerreno("rainforests").length);
     }
 
 
     // TODO Haz la función en la clase Ejercicio6: obtenerPlanetasResidentes(int residentes, String nombre)
     //  nos devuelve una lista de aquellos planetas que tienen más residentes que la variable "residentes" y que su nombre contenga el String "nombre"
-    // tip: cada residente es represetnado por una url, solo tienes que contar. Ej si residents=[https://swapi.dev/api/people/3/, https://swapi.dev/api/people/21/] el resultado será 2
+    // tip: cada residente es represetnado por una url, solo tienes que contar.
+    // Ej si residents=[https://swapi.dev/api/people/3/, https://swapi.dev/api/people/21/] el resultado será 2
     // TODO Haz todos los test que sean necesarios.
     // tip: Si el planeta tiene una población indeterminada, no debe mostrarse
+
+
 }
