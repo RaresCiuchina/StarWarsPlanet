@@ -96,5 +96,20 @@ public class PersonajeTest {
     // TODO Haz todos los test que sean necesarios.
     // tip: Si el planeta tiene una población indeterminada, no debe mostrarse
 
+    //Tatooine tiene 10 residentes
+
+    @Test
+    public void PruebaobtenerPlanetasResidentes0tatoo(){
+        Assertions.assertEquals(1,ej.obtenerPlanetasResidentes(0,"Tatooine").length);
+    }
+    @Test
+    public void PruebaobtenerPlanetasResidentes9tatoo(){
+        Assertions.assertEquals(1,ej.obtenerPlanetasResidentes(9,"Tatooine").length);
+    }
+    @Test
+    public void PruebaobtenerPlanetasResidentes10tatoo(){
+        Assertions.assertEquals(0,ej.obtenerPlanetasResidentes(10,"Tatooine").length);
+    }
+
 
 }

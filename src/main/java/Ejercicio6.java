@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -74,25 +75,21 @@ public class Ejercicio6 {
         return getArraySinNulos(fuera,i);
     }
 
-    public Planet[] obtenerPlanetasResidentes(int residentes, String nombre){
+
+
+public Planet[] obtenerPlanetasResidentes(int residentes, String nombre){
+        Planet[] planetas = planets.obtenerTodos();
         Planet[] fuera = new Planet[planets.obtenerTodos().length];
         int i = 0;
-        for ()
 
 
-        for(Planet planeta : planets.obtenerTodos()){
-            if (planeta.getResidents().equals("unknown") || planeta.getTerrain().equals(null)) {
-                break;
+        for (Planet planeta : planetas){
+                if (planetas[i].getResidents().length > residentes && planetas[i].getName().contains(nombre)){
+                    fuera[i]=planeta;
+                    i++;
+                }
             }
-            if (planeta.equals(nombre) && planeta){
-                fuera[i]=planeta;
-                i++;
-            }
-            if(){
-
-            }
-
         return getArraySinNulos(fuera,i);
-    }
-
+        }
 }
+
